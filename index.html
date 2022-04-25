@@ -8,13 +8,16 @@
     <body>
         <!-- Header -->
         <header>
-            <!--        CLASS LOGO CAN BE USED FOR MOBILE CONTAINER AS WELL     -->
             <div class="logo">
-                <img src="images/ic-logo.svg" alt="Colmar Academy Logo">
-                <span><strong>colmar</strong>academy</span>
+                <img class="desktop" src="images/ic-logo.svg" alt="">
+                <a href="#"><img class="mobile" src="images/ic-logo.svg" alt=""></a>
+                <a href="#"><img class="mobile" src="images/ic-on-campus.svg" alt=""></a>
+                <a href="#"><img class="mobile" src="images/ic-online.svg" alt=""></a>
+                <a href="#"><img class="mobile" src="images/ic-login.svg" alt=""></a>
+                <span class="desktop logo-text"s><strong>colmar</strong><span class="light">academy</span></span>
             </div>
 
-            <div class="nav-links">
+            <div class="nav-links desktop">
                 <ul>
                     <li><a href="#">On campus</a></li>
                     <li><a href="#">Online</a></li>
@@ -23,7 +26,7 @@
                 </ul>
             </div>
         </header>
-
+    
 
         <!-- Main -->
         <main>
@@ -203,7 +206,7 @@
                 <!-- Video Section -->
                 <div class="video-container">
                     <div class="video">
-                        <video controls>
+                        <video width="480px" controls>
                             <source src="videos/thesis.mp4" type="video/mp4">
                             Your browser does not support the video tag
                         </video>
