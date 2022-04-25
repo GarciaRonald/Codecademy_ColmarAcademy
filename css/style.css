@@ -5,7 +5,7 @@ html {
 
 /* Header */
 /* Mobile */
-@media all and (max-width: 700px) {
+@media all and (max-width: 480px) {
     header .desktop {
         display: none;
     }
@@ -22,7 +22,7 @@ html {
     }
 }
 /* Desktop */
-@media all and (min-width: 700px) {
+@media all and (min-width: 480px) {
     header .mobile {
         display: none;
     }
