@@ -1,11 +1,11 @@
 /* Defaults */
 html {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
 }
 
 /* Header */
 /* Mobile */
-@media all and (max-width: 480px) {
+@media all and (min-width: 0px) and (max-width: 812px) {
     header .desktop {
         display: none;
     }
@@ -22,7 +22,7 @@ html {
     }
 }
 /* Desktop */
-@media all and (min-width: 480px) {
+@media all and (min-width: 813px) {
     header .mobile {
         display: none;
     }
@@ -54,5 +54,67 @@ html {
     header .nav-links ul li a {
         color: black;
         text-decoration: none;
+    }
+}
+
+/* Start Here Section */
+/* Mobile */
+@media all and (min-width: 0px) and (max-width: 812px) {
+    main .sign-up {
+        background-color: lightgray;
+        width: 100%;
+    }
+    main .sign-up .image img {
+        max-width: 100%;
+    }
+    main .sign-up .text {
+        color: darkslategray;
+        width: 90%;
+        margin: 0 auto;
+    }
+    main .sign-up .text h1 {
+        margin-bottom: 32px;
+    }
+    main .sign-up .text button {
+        text-align: center;
+        background-color: darkslategrey;
+        color: white;
+        width: 90%;
+        height: 40px;
+        padding: 8px 0;
+        margin-top: 24px;
+        margin-bottom: 32px;
+    }
+}
+/* Desktop */
+@media all and (min-width: 813px) {
+    main .sign-up {
+        background-color: lightgray;
+        width: 100%;
+        display: flex;
+    }
+    main .sign-up .image {
+        max-width: 60%;
+    }
+    main .sign-up .image img {
+        max-width: 90%;
+        margin: 32px 24px;
+    }
+    main .sign-up .text {
+        color: darkslategrey;
+        width: 30%;
+        margin: auto 0;
+    }
+    main .sign-up .text h1 {
+        margin-bottom: 32px;
+    }
+    main .sign-up .text button {
+        background-color: darkslategrey;
+        color: white;
+        width: 250px;
+        height: 40px;
+        padding: 8px 0;
+        margin-top: 24px;
+        margin-bottom: 32px;
     }
 }
