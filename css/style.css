@@ -1,6 +1,11 @@
 /* Defaults */
 html {
     font-family: Helvetica, sans-serif;
+    color: darkslategray;
+    letter-spacing: 0.4px;
+}
+p {
+    line-height: 20px;
 }
 
 /* Header */
@@ -68,6 +73,7 @@ html {
         max-width: 100%;
     }
     main .sign-up .text {
+        text-align: center;
         color: darkslategray;
         width: 90%;
         margin: 0 auto;
@@ -116,5 +122,87 @@ html {
         padding: 8px 0;
         margin-top: 24px;
         margin-bottom: 32px;
+    }
+}
+
+/* More Info */
+/* Mobile */
+@media all and (min-width: 0px) and (max-width: 812px) {
+    main .info {
+        width: 100%;
+        padding: 16px 16px;
+    }
+    main .info .quote {
+        display: none;
+    }
+    main .info .more-info .container {
+        width: 95%;
+        margin: 0 auto;
+    }
+    main .info .more-info .container .picture img.mobile {
+        max-width: 90%;
+        height: auto;
+    }
+    main .info .more-info .container .picture .desktop {
+        display: none;
+    }
+    main .info .more-info .container .text {
+        margin: 0 16px 64px 16px;
+    }
+    main .info .more-info .container .text a {
+        text-decoration: none;
+        color: cornflowerblue;
+        font-weight: bold;
+    }
+}
+/* Desktop */
+@media all and (min-width: 813px) {
+    main .info {
+        width: 100%;
+        margin: 32px 0;
+        display: flex;
+    }
+    main .info .quote {
+        max-width: 60%;
+    }
+    main .info .quote .image img {
+        max-width: 90%;
+        margin: 0 24px;
+    }
+    main .info .quote .text {
+        max-width: 90%;
+        margin: 0 24px 0 32px;
+    }
+    main .info .more-info {
+        display: flex;
+        flex-direction: column;
+    }
+    main .info .more-info .container {
+        border: 1px solid lightgray;
+        max-width: 100%;
+        padding: 16px 16px;
+        display: flex;
+    }
+    main .info .more-info .background {
+        background-color: lightgrey;
+    }
+    main .info .more-info .container .picture {
+        max-width: 35%;
+        height: auto;
+    }
+    main .info .more-info .container .picture .desktop {
+        max-width: 100%;
+    }
+    main .info .more-info .container .picture .mobile {
+        display: none;
+    }
+    main .info .more-info .container .text {
+        max-width: 65%;
+        padding: 0 15px 0 20px;
+    }
+    main .info .more-info .container .text a {
+        text-decoration: none;
+        color: cornflowerblue;
+        font-weight: bold;
     }
 }
