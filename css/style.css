@@ -131,6 +131,7 @@ p {
     main .info {
         width: 100%;
         padding: 16px 16px;
+        border-bottom: 1px solid lightgrey;
     }
     main .info .quote {
         display: none;
@@ -147,7 +148,7 @@ p {
         display: none;
     }
     main .info .more-info .container .text {
-        margin: 0 16px 64px 16px;
+        margin: 0 16px 32px 16px;
     }
     main .info .more-info .container .text a {
         text-decoration: none;
@@ -204,5 +205,57 @@ p {
         text-decoration: none;
         color: cornflowerblue;
         font-weight: bold;
+    }
+}
+
+/* Start Learning Section */
+/* Mobile */
+@media all and (min-width: 0px) and (max-width: 812px) {
+    main .start-learning {
+        padding: 32px 0 32px 0;
+        border-bottom: 1px solid lightgray;
+    }
+    main .start-learning .title {
+        text-align: center;
+    }
+    main .start-learning .mobile div {
+        background-color: lightgray;
+        padding: 16px 16px 16px 16px;
+        margin-bottom: 8px;
+    }
+    main .start-learning .cat-container {
+        display: none;
+    }
+}
+/* Desktop */
+@media all and (min-width: 813px) {
+    main .start-learning {
+        background-color: lightgrey;
+        padding: 32px 32px 32px 32px;
+    }
+    main .start-learning .title {
+        text-align: center;
+        padding-bottom: 32px;
+    }
+    main .start-learning .mobile {
+        display: none;
+    }
+    main .start-learning .cat-container {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    main .start-learning .cat-container .cat {
+        background-color: white;
+        margin: 0 16px 32px 16px;
+        max-width: 30%;
+    }
+    main .start-learning .cat-container .cat .text {
+        padding: 16px;
+    }
+    main .start-learning .cat-container .cat .image img {
+        max-width: 100%;
     }
 }
